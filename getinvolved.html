@@ -57,7 +57,7 @@
           </div>
         </div>
       </nav>
-      <section class="discover-section">
+      <section class="contact-section">
         <div class="container text-white text-center py-4">
           <h1 class="w-75 mx-auto py-3">Contact us !</h1>
           <p class="fs-6 w-100 mx-auto py-4">
@@ -83,30 +83,35 @@
         <section class="container w-50 mx-auto">
             <h2 class="titre text-uppercase text-center py-3">get involved</h2>
             <form action="" method="" class="py-5">
-                <div class="mb-3">
+                <div class="mb-3 text-center">
                     <label for="prenom" class="form-label fs-5">Votre prenom</label>
                     <input type="text" class="form-control" id="prenom" placeholder="Severus">
+                    <p class="d-none text-danger" id="prenom">Votre prenom doit faire au moins deux caractéres</p>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 text-center">
                     <label for="nom" class="form-label fs-5">Votre nom</label>
                     <input type="text" class="form-control" id="nom" placeholder="Severus">
+                    <p class="d-none text-danger" id="nomError">Votre nom doit faire au moins deux caractéres</p>
                 </div>
-                <div class="mb-3">
-                    <label for="select" class="form-label fs-5">Why are you contaacting us ?</label>
+                <div class="mb-3 text-center">
+                    <label for="select" class="form-label fs-5">Why are you contacting us ?</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>-- Select an option --</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
+                        <option value="1">I want to be a educator</option>
+                        <option value="2">Communication</option>
                         <option value="3">Three</option>
                     </select>
+                    <p class="d-none text-danger" id="selectError">Veuiller selectionner un élément</p>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 text-center">
                     <label for="email" class="form-label fs-5">Votre email</label>
                     <input type="email" class="form-control" id="email" placeholder="thebestslytherin@gmail.com">
+                    <p class="d-none text-danger fs-5" id="emailError">Votre email n'est pas valide</p>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 text-center">
                     <label for="message" class="form-label fs-5">Votre message</label>
                     <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <p class="d-none text-danger" id="textareaError">Votre message doit contenir au moin dix caractéres</p>
                 </div>
                 
                 
